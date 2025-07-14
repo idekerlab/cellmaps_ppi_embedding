@@ -165,7 +165,11 @@ class FakeEmbeddingGenerator(EmbeddingGenerator):
 
 class CellMapsPPIEmbedder(object):
     """
-    Class to run algorithm
+    Executes the generation of protein-protein interaction (PPI) embeddings.
+
+    This class coordinates reading PPI data, generating node embeddings using a
+    specified embedding generator (e.g., Node2Vec), writing results to disk, and
+    registering datasets and software in FAIRSCAPE.
     """
     PPI_EDGELIST_FILEKEY = 'edgelist'
 
